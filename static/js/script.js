@@ -12,5 +12,5 @@ window.addEventListener('resize', ()=>{
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(()=> {
         document.classList.remove('resize-animation-stopper'); 
-    }, 400);
-}); 
+    }, 400); 
+});  
