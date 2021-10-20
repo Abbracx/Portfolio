@@ -1,5 +1,6 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
 from django.urls import reverse
+from .models import Project
 
 
 
@@ -8,4 +9,4 @@ def home_view(request):
 	data = {
 		'page': 'Homepage',
 	}
-	return render(request, 'abbracx/documents.home.html', data)
+	return render(request, 'abbracx/documents/home.html', data)
