@@ -68,11 +68,54 @@ h1, h2, h3, h4, h5, h6, p{
      line-height: 1.7;
 }
 
+/* title */
+
+.title{
+    position: relative;
+}
+
+.title > h2 {
+    font-size: 3rem;
+    font-family: var(--poppins);
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 900;
+    color: var(--nero);
+}
+
+.title div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.title div h2 {
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-family: var(--poppins);
+    font-weight: 800;
+}
+
 .container{
     width: 90vw;
     margin: 0 auto;
 }
 
+@media screen and (min-width: 500px){
+    
+    .title > h2{
+        font-size: 6rem;
+    }
+
+    .title div h2{
+        font-size: 3rem;
+    }
+
+
+}
 @media screen and (min-width: 992px){
     .container{
         width: 88vw;

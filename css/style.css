@@ -160,7 +160,55 @@
     align-items: center;
 }
 
-/* footer */
+/* #### About #### */
+
+.about{
+    padding: 5rem 0 2.5rem 0;
+}
+
+.about .row-right {
+    padding: 3rem 0;
+}
+
+.about .row-right p{
+    margin: 1rem 0;
+}
+
+.about-content {
+    margin: 1.5rem 0;
+}
+
+.about-content li {
+    display: flex;
+    margin: 0.6rem 0;
+}
+
+.about-content li span{
+    flex: 1
+}
+
+.about-content li span:first-child{
+    color: #fff;
+    font-weight: 600;
+}
+
+.about-content li span:last-child{
+    color: var(--green);
+}
+
+.about .row-right h3{
+    color: var(--green);
+    font-size: 1.5rem;
+}
+
+
+.about .row-right h3 span{
+    color: #fff;
+    font-weight: 400;
+}
+
+
+/* Footer */
 .footer{
     padding: 2.5rem 0;
     border-top: 1.5px solid #252525;
@@ -240,6 +288,7 @@
 /* Media Queries */
 
 @media screen and (min-width: 500px) {
+    /* Homepage */
     .home .row-left h1{
         font-size: 4rem;
     }
@@ -264,13 +313,25 @@
 }
 
 @media screen and (min-width: 768px){
+    /* Footer */
     .footer .row{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
+
+    /* about page */
+    .about .row-left {
+        width: 400px;
+        height: 400px;
+        margin: 1rem auto;
+        overflow: hidden;
+        border-radius: 50%;
+        position: relative;
+    }
 }
 
 @media screen and (min-width: 992px){
+    /* navbar section */
     .navbar-toggler{
         display: none;
     }
@@ -304,7 +365,7 @@
         font-size: 1rem;
     }
 
-    /* Homepage */
+    /* Home page */
     
     .home .row{
         display: grid;
@@ -313,11 +374,11 @@
     }
 
     .home .row > div{
-        height: cal(100vh - 73px);
+        height: calc(100vh - 73px);
         border: none;
         margin: 0;
         align-items: flex-start;
-    }
+    } 
 
     .home .row-left{
         text-align: left;
@@ -341,9 +402,18 @@
         transform: translateY(-14px);
     }
 
+    /* About Page */
+    .about .row{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        align-items: center;
+    }
+
 }
 
 @media screen and (min-width: 1200px){
+    /* footer */
     .footer .row{
         grid-template-columns:  repeat(4, 1fr);
     }
